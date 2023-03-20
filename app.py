@@ -51,6 +51,19 @@ def barcode_info():
                         "processKey": "APPLES",
                         "standardKey": "DEFAULT"
                     }
+    if barcode == "cristobal":
+            letters = string.digits
+            name = "demo " + (''.join(random.choice(letters) for i in range(6)))
+            return {
+                        "inspectionName": name,
+                        "productor": "Fruta Sol",
+                        "planta": "Curico",
+                        "cosecha": "1672752255000",
+                        "recepcion": "1672838655000",
+                        "codeVariety": "Common Red Apple",
+                        "processKey": "APPLES",
+                        "standardKey": "DEFAULT"
+                    }
     if barcode == "bb":
             letters = string.digits
             name = "Blueberries - PS: " + (''.join(random.choice(letters) for i in range(6)))
