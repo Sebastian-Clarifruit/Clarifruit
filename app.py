@@ -55,14 +55,13 @@ def barcode_info():
             letters = string.digits
             name = "demo " + (''.join(random.choice(letters) for i in range(6)))
             return {
-                        "inspectionName": name,
-                        "productor": "Fruta Sol",
-                        "planta": "Curico",
-                        "cosecha": "1672752255000",
-                        "recepcion": "1672838655000",
+                        "inspectionName": Demo Latam,
+                        "prod": "Productor Manzanas",
+                        "npallet": "Curico",
+                        "fdc": "1672752255000",
                         "codeVariety": "Common Red Apple",
                         "processKey": "APPLES",
-                        "standardKey": "DEFAULT"
+                        "standardKey": "USDA"
                     }
     if barcode == "bb":
             letters = string.digits
