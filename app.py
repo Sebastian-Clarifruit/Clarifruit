@@ -55,9 +55,9 @@ def barcode_info():
             letters = string.digits
             name = "demo " + (''.join(random.choice(letters) for i in range(6)))
             return {
-                        "inspectionName": Demo Latam,
+                        "inspectionName": name,
                         "prod": "Productor Manzanas",
-                        "npallet": "Curico",
+                        "npallet": "300",
                         "fdc": "1672752255000",
                         "codeVariety": "Common Red Apple",
                         "processKey": "APPLES",
