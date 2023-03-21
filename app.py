@@ -60,7 +60,7 @@ def barcode_info():
                         "npallet": "300",
                         "fdc": "1672752255000",
                         "codeVariety": "Common Red Apple",
-                        "processKey": "APPLES",
+                        "processKey": "proceso",
                         "standardKey": "USDA"
                     }
     if barcode == "bb":
