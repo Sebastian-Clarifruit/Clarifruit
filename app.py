@@ -67,7 +67,7 @@ def barcode_info():
             letters = string.digits
             name = "Blueberries - PS: " + (''.join(random.choice(letters) for i in range(6)))
             return {
-                        "inspectionName": "Cherry Summit",
+                        "inspectionName": name,
                         "productor": "Agricolas Farias",
                         "nproductor": "B432",
                         "cosecha": "1681790400",
