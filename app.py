@@ -69,9 +69,9 @@ def barcode_info():
             return {
                         "inspectionName": name,
                         "productor": "Agricolas Farias",
-                        "nproductor": 048,
-                        "cosecha": "1681790400",
-                        "recepcion": "1681790400",
+                        "nproductor": 48,
+                        "cosecha": "1681704000",
+                        "recepcion": "1681704000",
                         "kgtotal": 25
                     }
     if barcode == "BlueBerry Convention":
@@ -80,9 +80,9 @@ def barcode_info():
             return {
                         "inspectionName": name,
                         "productor": "Agricolas Farias",
-                        "nproductor": 048,
-                        "cosecha": "1681790400",
-                        "recepcion": "1681790400",
+                        "nproductor": 48,
+                        "cosecha": "1681704000",
+                        "recepcion": "1681704000",
                         "kgtotal": 25
                     }
     if barcode == "pineapple":
