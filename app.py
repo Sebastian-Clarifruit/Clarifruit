@@ -72,7 +72,7 @@ def barcode_info():
                         "nproductor": "B432",
                         "cosecha": "1681790400",
                         "recepcion": "1681790400",
-                        "kgtotal": "and"
+                        "kgtotal": 25
                     }
     if barcode == "BlueBerry Convention":
             letters = string.digits
