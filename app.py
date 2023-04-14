@@ -69,7 +69,7 @@ def barcode_info():
             return {
                         "inspectionName": name,
                         "productor": "Agricolas Farias",
-                        "nproductor": "B432",
+                        "nproductor": 048,
                         "cosecha": "1681790400",
                         "recepcion": "1681790400",
                         "kgtotal": 25
