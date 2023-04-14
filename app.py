@@ -65,7 +65,7 @@ def barcode_info():
                     }
     if barcode == "Cherry Summit":
             letters = string.digits
-            name = "Blueberries - PS: " + (''.join(random.choice(letters) for i in range(6)))
+            name = "Cherry Summit"
             return {
                         "inspectionName": name,
                         "productor": "Agricolas Farias",
@@ -76,15 +76,14 @@ def barcode_info():
                     }
     if barcode == "BlueBerry Convention":
             letters = string.digits
-            name = "Tomatoes - PS:  " + (''.join(random.choice(letters) for i in range(6)))
+            name = "BlueBerry Convention"
             return {
                         "inspectionName": name,
-                        "ggnumber": 13452324,
-                        "grower": "Grower B",
-                        "customer": "Kaufland",
-                        "codeVariety": "commonbeef",
-                        "processKey": "p_tomato_ps",
-                        "standardKey": "stand_ps_tomatoes"
+                        "productor": "Agricolas Farias",
+                        "nproductor": 048,
+                        "cosecha": "1681790400",
+                        "recepcion": "1681790400",
+                        "kgtotal": 25
                     }
     if barcode == "pineapple":
             letters = string.digits
