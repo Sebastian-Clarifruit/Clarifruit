@@ -63,19 +63,18 @@ def barcode_info():
                         "processKey": "proceso",
                         "standardKey": "USDA"
                     }
-    if barcode == "bb":
+    if barcode == "Cherry Summit":
             letters = string.digits
             name = "Blueberries - PS: " + (''.join(random.choice(letters) for i in range(6)))
             return {
-                        "inspectionName": name,
-                        "ggnumber": 41235373,
-                        "grower": "Grower A",
-                        "customer": "LIDL",
-                        "codeVariety": "and",
-                        "processKey": "p_bb_ps",
-                        "standardKey": "stand_ps_bb"
+                        "inspectionName": "Cherry Summit",
+                        "productor": "Agricolas Farias",
+                        "nproductor": "B432",
+                        "cosecha": "1681790400",
+                        "recepcion": "1681790400",
+                        "kgtotal": "and"
                     }
-    if barcode == "tomato":
+    if barcode == "BlueBerry Convention":
             letters = string.digits
             name = "Tomatoes - PS:  " + (''.join(random.choice(letters) for i in range(6)))
             return {
