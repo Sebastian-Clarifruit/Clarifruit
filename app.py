@@ -74,7 +74,7 @@ def barcode_info():
                         "recepcion": "1681704000",
                         "kgtotal": 25
                     }
-    if barcode == "BlueBerry Convention":
+    if barcode == "Blueberry Convention":
             letters = string.digits
             name = "BlueBerry Convention"
             return {
