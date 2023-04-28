@@ -85,17 +85,16 @@ def barcode_info():
                         "recepcion": "1681838430000",
                         "kgtotal": 25
                     }
-    if barcode == "pineapple":
+    if barcode == "Tomate":
             letters = string.digits
-            name = "Pineapples - PS:  " + (''.join(random.choice(letters) for i in range(6)))
+            name = "Demo Tomate"
             return {
                         "inspectionName": name,
-                        "ggnumber": 94544324,
-                        "grower": "Grower C",
-                        "customer": "Walmart",
-                        "codeVariety": "commonpa",
-                        "processKey": "pineapples_ps_process",
-                        "standardKey": "stand_ps_pineapples"
+                        "productor": "Agricolas Farias",
+                        "cosecha": "1681838430000",
+                        "recepcion": "1681838430000",
+                        "kgtotal": 25,
+                        "ncajas": 48
                     }
     if barcode == "apple":
             letters = string.digits
