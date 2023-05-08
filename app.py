@@ -74,6 +74,18 @@ def barcode_info():
                         "recepcion": "1681838430000",
                         "kgtotal": 25
                     }
+     if barcode == "Francisca":
+            letters = string.digits
+            name = "Proceso Manzanas"
+            return {
+                        "inspectionName": name,
+                        "productor": "Agricolas Farias",
+                        "nproductor": 48,
+                        "planta": "Planta Norte",
+                        "cosecha": "1681838430000",
+                        "recepcion": "1681838430000",
+                        "kgtotal": 25
+                    }
     if barcode == "Blueberry Convention":
             letters = string.digits
             name = "BlueBerry Convention"
