@@ -63,13 +63,14 @@ def barcode_info():
                         "processKey": "proceso",
                         "standardKey": "USDA"
                     }
-    if barcode == "Cherry Summit":
+    if barcode == "Demo España":
             letters = string.digits
-            name = "Cherry Summit"
+            name = "Proceso Manzanas"
             return {
                         "inspectionName": name,
                         "productor": "Agricolas Farias",
                         "nproductor": 48,
+                        "planta": "Planta Norte",
                         "cosecha": "1681838430000",
                         "recepcion": "1681838430000",
                         "kgtotal": 25
