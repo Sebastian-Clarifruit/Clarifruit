@@ -38,18 +38,15 @@ def barcode_info():
                         "processKey": "GRAPES",
                         "standardKey": "DEFAULT"
                     }
-    if barcode == "seba":
+    if barcode == "IFPA 2023":
             letters = string.digits
-            name = "demo " + (''.join(random.choice(letters) for i in range(6)))
+            name = "IFPA 2023 " + (''.join(random.choice(letters) for i in range(6)))
             return {
                         "inspectionName": name,
-                        "productor": "Fruta Sol",
-                        "planta": "Curico",
-                        "cosecha": "1672752255000",
-                        "recepcion": "1672838655000",
-                        "codeVariety": "Common Red Apple",
-                        "processKey": "APPLES",
-                        "standardKey": "DEFAULT"
+                        "grower": "Grower A",
+                        "ggnumber": "515",
+                        "arrivaldate": "1697727235000",
+                        "temp": "16"
                     }
     if barcode == "cristobal":
             letters = string.digits
