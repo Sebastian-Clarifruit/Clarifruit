@@ -84,16 +84,16 @@ def barcode_info():
                         "recepcion": "1681838430000",
                         "kgtotal": 25
                     }
-    if barcode == "Blueberry Convention":
+    if barcode == "USDA":
             letters = string.digits
-            name = "BlueBerry Convention"
+            name = "USDA Demo Sample"
             return {
-                        "inspectionName": name,
-                        "productor": "Agricolas Farias",
-                        "nproductor": 48,
-                        "cosecha": "1681838430000",
-                        "recepcion": "1681838430000",
-                        "kgtotal": 25
+                        "inspectionName": "USDA Demo Sample",
+                        "ggnumber": 001234,
+                        "grower": "Grower B",
+                        "coo": "Chile",
+                        "customer": "USDA",
+                        "arrivaldate": "1705460400000",
                     }
     if barcode == "Tomate":
             letters = string.digits
