@@ -89,7 +89,7 @@ def barcode_info():
             name = "USDA Demo Sample"
             return {
                         "inspectionName": name,
-                        "ggnumber": 001234,
+                        "ggnumber": 987654321,
                         "grower": "Grower B",
                         "coo": "Chile",
                         "customer": "USDA",
