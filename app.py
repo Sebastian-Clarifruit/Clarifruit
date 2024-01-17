@@ -88,12 +88,12 @@ def barcode_info():
             letters = string.digits
             name = "USDA Demo Sample"
             return {
-                        "inspectionName": "USDA Demo Sample",
+                        "inspectionName": name,
                         "ggnumber": 001234,
                         "grower": "Grower B",
                         "coo": "Chile",
                         "customer": "USDA",
-                        "arrivaldate": "1705460400000",
+                        "arrivaldate": "1705460400000"
                     }
     if barcode == "Tomate":
             letters = string.digits
