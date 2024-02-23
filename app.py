@@ -38,6 +38,8 @@ def barcode_info():
                     "insppo": "Saint Luis",
                     "shi": "Cotsco",
                     "shire": 12345,
+                    "cnee": "Nature Fresh",
+                    "cneeref": 0001,
                     "loca": "California",
                     "ve": "Maersk",
                     "sample": 100,
