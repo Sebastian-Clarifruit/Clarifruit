@@ -39,7 +39,7 @@ def barcode_info():
                     "shi": "Cotsco",
                     "shire": 12345,
                     "cnee": "Nature Fresh",
-                    "cneeref": 0001,
+                    "cneeref": 7854,
                     "loca": "California",
                     "ve": "Maersk",
                     "sample": 100,
