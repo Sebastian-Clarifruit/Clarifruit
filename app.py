@@ -42,7 +42,7 @@ def barcode_info():
                     "ve": "Maersk",
                     "sample": 100,
                     "codeVariety": "BeefSteak",
-                    "processKey": "TOMATOES",
+                    "processKey": "lot",
                     "standardKey": "DEFAULT"
                 }
   
