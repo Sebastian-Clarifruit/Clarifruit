@@ -41,6 +41,8 @@ def barcode_info():
                     "loca": "California",
                     "ve": "Maersk",
                     "sample": 100,
+                    "codeVariety": "BeefSteak",
+                    "processKey": "TOMATOES",
                     "standardKey": "DEFAULT"
                 }
   
