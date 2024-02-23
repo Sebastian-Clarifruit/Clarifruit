@@ -25,6 +25,24 @@ def barcode_info():
                     "processKey": "GRAPES",
                     "standardKey": "DEFAULT"
                 }
+        
+    if barcode == "Nature Fresh":
+        letters = string.digits
+        name = "Nature Fresh Trial" + (''.join(random.choice(letters) for i in range(6)))
+        return {
+                    "inspectionName": name,
+                    "coo": "USA",
+                    "warehouse": "Warehouse",
+                    "insty": "Reception",
+                    "shipmen": "Truck",
+                    "insppo": "Saint Luis",
+                    "shi": "Cotsco",
+                    "shire": 12345,
+                    "loca": "California",
+                    "ve": "Maersk",
+                    "sample": 100,
+                    "standardKey": "DEFAULT"
+                }
   
     else:
         return jsonify({"error":"No Stock - Barcode not exist",
