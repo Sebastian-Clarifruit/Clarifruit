@@ -47,6 +47,28 @@ def barcode_info():
                     "processKey": "lot",
                     "standardKey": "DEFAULT"
                 }
+            
+        
+    if barcode == "Bjs Grapes":
+        letters = string.digits
+        name = "Bjs Grapes" + (''.join(random.choice(letters) for i in range(6)))
+        return {
+                    "inspectionName": name,
+                    "COO": "USA",
+                    "PD": "1709607600000",
+                    "IN": "BJ's",
+                    "codeVariety": "CO",
+                }
+    if barcode == "Bjs Oranges":
+        letters = string.digits
+        name = "Bjs Oranges" + (''.join(random.choice(letters) for i in range(6)))
+        return {
+                    "inspectionName": name,
+                    "COO": "USA",
+                    "PD": "1709607600000",
+                    "IN": "BJ's",
+                    "codeVariety": "CO",
+                }
   
     else:
         return jsonify({"error":"No Stock - Barcode not exist",
