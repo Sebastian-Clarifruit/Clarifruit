@@ -74,9 +74,9 @@ def barcode_info():
         name = "FDM" + (''.join(random.choice(letters) for i in range(6)))
         return {
                     "inspectionName": name,
-                    "COO": "Costa Rica",
+                    "coo": "Costa Rica",
                     "arrivaldate": "1709607600000",
-                    "IN": "FDM",
+                    "grower": "FDM",
                 }
   
     else:
