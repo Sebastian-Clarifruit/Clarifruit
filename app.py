@@ -69,6 +69,16 @@ def barcode_info():
                     "IN": "BJ's",
                     "codeVariety": "CO",
                 }
+        if barcode == "abcd1234":
+        letters = string.digits
+        name = "FDM" + (''.join(random.choice(letters) for i in range(6)))
+        return {
+                    "inspectionName": name,
+                    "COO": "Costa Rica",
+                    "arrivaldate": "1709607600000",
+                    "IN": "FDM",
+                    "codeVariety": "SG",
+                }
   
     else:
         return jsonify({"error":"No Stock - Barcode not exist",
