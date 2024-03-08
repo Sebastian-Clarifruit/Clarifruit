@@ -77,7 +77,6 @@ def barcode_info():
                     "COO": "Costa Rica",
                     "arrivaldate": "1709607600000",
                     "IN": "FDM",
-                    "codeVariety": "SG",
                 }
   
     else:
