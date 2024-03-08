@@ -69,7 +69,7 @@ def barcode_info():
                     "IN": "BJ's",
                     "codeVariety": "CO",
                 }
-        if barcode == "abcd1234":
+    if barcode == "abcd1234":
         letters = string.digits
         name = "FDM" + (''.join(random.choice(letters) for i in range(6)))
         return {
