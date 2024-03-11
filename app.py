@@ -136,7 +136,16 @@ def barcode_info():
             "cont": "MSDU 983085/8",
             "eta": "08-03-2024",
         }
-    
+    if barcode in range(80224001,80224021):
+        letters = string.digits
+        name = barcode
+        return {
+            "inspectionName": name,
+            "tlt": "VITULA FRUIT SRL",
+            "lab": "ITALY",
+            "siz": "MSC SAMANTHA",
+            "gro": "MSDU 983085/8",
+        } 
     else:
         return jsonify({"error": "No Stock - Barcode not exist",
                         "message": "There is no stock on pallet reference"}), 422
