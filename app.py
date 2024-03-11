@@ -137,7 +137,7 @@ def barcode_info():
             "cont": "MSDU 983085/8",
             "eta": "08-03-2024",
         }
-    if barcode == range_1t:
+    if barcode in range_1t:
         letters = string.digits
         name = barcode
         return {
