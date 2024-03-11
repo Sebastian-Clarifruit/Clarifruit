@@ -5,6 +5,7 @@ import string
 
 app = Flask(__name__)
 range_1 = range(80224001,80224021)
+range_1t = list(map(str, range_1))
 
 @app.route('/')
 def hello_world():
@@ -136,7 +137,7 @@ def barcode_info():
             "cont": "MSDU 983085/8",
             "eta": "08-03-2024",
         }
-    if barcode == range_1:
+    if barcode == range_1t:
         letters = string.digits
         name = barcode
         return {
