@@ -4,7 +4,7 @@ import random
 import string
 
 app = Flask(__name__)
-
+range_1 = range(80224001,80224021)
 
 @app.route('/')
 def hello_world():
@@ -136,7 +136,7 @@ def barcode_info():
             "cont": "MSDU 983085/8",
             "eta": "08-03-2024",
         }
-    if barcode in range(80224001,80224021):
+    if barcode == range_1:
         letters = string.digits
         name = barcode
         return {
