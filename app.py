@@ -78,7 +78,27 @@ def barcode_info():
                     "arrivaldate": "1709607600000",
                     "grower": "FDM",
                 }
-  
+    if barcode == "21002754":
+        letters = string.digits
+        name = "FDM" + (''.join(random.choice(letters) for i in range(6)))
+        return {
+                    "inspectionName": name,
+                    "exp": "SOC. COOP. AGR. ZEOLI FRUIT",
+                    "coo": "ITALY",
+                    "vess": "MSC SAMANTHA",
+                    "cont": "MSDU 985028/4",
+                    "eta": "08-03-2024",
+                }
+    if barcode in range(16236,16256):
+        letters = string.digits
+        name = "FDM" + (''.join(random.choice(letters) for i in range(6)))
+        return {
+                    "inspectionName": name,
+                    "tlt": 21002754,
+                    "lab": "ITALY",
+                    "siz": 39,
+                    "gro": "SOC. COOP. AGR. ZEOLI FRUIT",
+                }
     else:
         return jsonify({"error":"No Stock - Barcode not exist",
                         "message":"There is no stock on pallet reference"}), 422
