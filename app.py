@@ -80,7 +80,7 @@ def barcode_info():
                 }
     if barcode == "21002754":
         letters = string.digits
-        name = "FDM" + (''.join(random.choice(letters) for i in range(6)))
+        name = barcode
         return {
                     "inspectionName": name,
                     "exp": "SOC. COOP. AGR. ZEOLI FRUIT",
@@ -89,16 +89,51 @@ def barcode_info():
                     "cont": "MSDU 985028/4",
                     "eta": "08-03-2024",
                 }
-    if barcode in range(16236,16256):
+   if barcode == "3620215":
         letters = string.digits
-        name = "FDM" + (''.join(random.choice(letters) for i in range(6)))
+        name = barcode
         return {
                     "inspectionName": name,
-                    "tlt": 21002754,
-                    "lab": "ITALY",
-                    "siz": 39,
-                    "gro": "SOC. COOP. AGR. ZEOLI FRUIT",
+                    "exp": "FRUITION SA",
+                    "coo": "GREECE",
+                    "vess": "MSC SAMANTHA",
+                    "cont": "TTNU 820993/1",
+                    "eta": "08-03-2024",
                 }
+    if barcode == "3550252":
+        letters = string.digits
+        name = barcode
+        return {
+                    "inspectionName": name,
+                    "exp": "FRUTTA FRIULI SCA",
+                    "coo": "ITALY",
+                    "vess": "MSC NIOVI VIII",
+                    "cont": "MNBU 438520/2",
+                    "eta": "08-03-2024",
+                }
+    if barcode == "3620216":
+        letters = string.digits
+        name = barcode
+        return {
+                    "inspectionName": name,
+                    "exp": "FRUITION SA",
+                    "coo": "GREECE",
+                    "vess": "MSC SAMANTHA",
+                    "cont": "TRIU 895471/2",
+                    "eta": "08-03-2024",
+                }
+    if barcode == "3420229":
+        letters = string.digits
+        name = barcode
+        return {
+                    "inspectionName": name,
+                    "exp": "VITULA FRUIT SRL",
+                    "coo": "ITALY",
+                    "vess": "MSC SAMANTHA",
+                    "cont": "MSDU 983085/8",
+                    "eta": "08-03-2024",
+                }
+                
     else:
         return jsonify({"error":"No Stock - Barcode not exist",
                         "message":"There is no stock on pallet reference"}), 422
