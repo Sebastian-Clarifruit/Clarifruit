@@ -5,25 +5,25 @@ import string
 
 app = Flask(__name__)
 
-range_1 = range(80224001,80224004)
+range_1 = range(80224001,80224005)
 range_1t = list(map(str, range_1))
-range_2 = range(80224005,80224008)
+range_2 = range(80224005,80224009)
 range_2t = list(map(str, range_2))
-range_3 = range(80224009,80224016)
+range_3 = range(80224009,80224017)
 range_3t = list(map(str, range_3))
-range_4 = range(80224017,80224021)
+range_4 = range(80224017,80224022)
 range_4t = list(map(str, range_4))
 list_1 = ["SUL240131024","SUL240131022","SUL240131025","SUL240131026","SUL240131027","SUL240131029","SUL240131031","SUL240131032","SUL240131034","SUL240131036","SUL240131037","SUL240131039","SUL240131041","SUL240131042"]
 list_2 = ["SUL240131023","SUL240131028","SUL240131030","SUL240131033","SUL240131035","SUL240131038","SUL240131040"]
-range_5 = range(967,969)
+range_5 = range(967,970)
 range_5t = list(map(str, range_5))
-range_6 = range(970,972)
+range_6 = range(970,973)
 range_6t = list(map(str, range_6))
-range_7 = range(973,976)
+range_7 = range(973,977)
 range_7t = list(map(str, range_7))
-range_8 = range(977,984)
+range_8 = range(977,985)
 range_8t = list(map(str, range_8))
-range_9 = range(985,986)
+range_9 = range(985,987)
 range_9t = list(map(str, range_9))
 range_10t = "987"
 list_3 = ["SUL240131001","SUL240131002","SUL240131004","SUL240131005","SUL240131006","SUL240131007","SUL240131010","SUL240131011","SUL240131012","SUL240131014","SUL240131015","SUL240131016","SUL240131017","SUL240131018","SUL240131020"]
