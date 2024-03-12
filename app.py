@@ -25,14 +25,14 @@ range_8 = range(977,984)
 range_8t = list(map(str, range_8))
 range_9 = range(985,986)
 range_9t = list(map(str, range_9))
-range_10t = 987
+range_10t = "987"
 list_3 = ["SUL240131001","SUL240131002","SUL240131004","SUL240131005","SUL240131006","SUL240131007","SUL240131010","SUL240131011","SUL240131012","SUL240131014","SUL240131015","SUL240131016","SUL240131017","SUL240131018","SUL240131020"]
 list_4 = ["SUL240131003","SUL240131008","SUL240131009","SUL240131013","SUL240131019","SUL240131021","SUL240131040"]
 range_11 = range(16236,16248)
 range_11t = list(map(str, range_11))
 range_12 = range(16249,16255)
 range_12t = list(map(str, range_12))
-range_13t = 16256
+range_13t = "16256"
 @app.route('/')
 def hello_world():
     return 'Hello, World!'
@@ -303,7 +303,7 @@ def barcode_info():
             "siz": 27,
             "gro": "FRUITION SA",
         }
-    if barcode == range_11t:
+    if barcode in range_11t:
         letters = string.digits
         name = barcode
         return {
@@ -313,7 +313,7 @@ def barcode_info():
             "siz": 39,
             "gro": "SOC. COOP. AGR. ZEOLI FRUIT",
         }
-    if barcode == range_12t:
+    if barcode in range_12t:
         letters = string.digits
         name = barcode
         return {
@@ -350,4 +350,3 @@ def print_payload():
 @app.route('/barcode_issue')
 def index():
     return jsonify("Error: Barcode is not exists"), 422
-
