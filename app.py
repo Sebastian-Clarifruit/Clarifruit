@@ -61,8 +61,8 @@ def barcode_info():
         return {
             "inspectionName": name,
             "coo": "USA",
-            "grower": "NFFSALESDC",
-            "customer": " Entrance Control",
+            "grower": "Demo Grower",
+            "customer": "Demo Client",
             "arrivaldate": "1709607600000",
             "ggnumber": 12345,       
         }
