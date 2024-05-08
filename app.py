@@ -55,26 +55,16 @@ def barcode_info():
             "standardKey": "DEFAULT"
         }
 
-    if barcode == "Nature Fresh":
+    if barcode == "abcd1234":
         letters = string.digits
-        name = "Nature Fresh Trial" + (''.join(random.choice(letters) for i in range(6)))
+        name = "Sales Demo" + (''.join(random.choice(letters) for i in range(6)))
         return {
             "inspectionName": name,
             "coo": "USA",
-            "warehouse": "NFFSALESDC",
-            "insty": " Entrance Control",
-            "shipmen": "Conventional",
-            "insppo": "Arrival",
-            "shi": "N/A",
-            "shire": 12345,
-            "cnee": "Nature Fresh Farms",
-            "cneeref": 1111,
-            "loca": "NFFSALESDC, Production",
-            "ve": "Maersk",
-            "sample": 100,
-            "codeVariety": "BeefSteak",
-            "processKey": "lot",
-            "standardKey": "DEFAULT"
+            "grower": "NFFSALESDC",
+            "customer": " Entrance Control",
+            "arrivaldate": "1709607600000",
+            "ggnumber": 12345,       
         }
 
     if barcode == "Bjs Grapes":
