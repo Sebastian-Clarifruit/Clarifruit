@@ -27,10 +27,14 @@ def barcode_info():
         return {
             "inspectionName": name,
             "coo": "USA",
-            "grower": "Demo Grower",
+            "grow": "Demo Grower",
             "customer": "Demo Client",
             "arrivaldate": "1709607600000",
-            "ggnumber": 12345,       
+            "ggnumber": 12345,
+            "in": "BJ's",
+            "pd": "1718807418296", 
+            "supp": "Affinor",
+            "br": "Bj's",
         }
 
     if barcode == "Bjs Grapes":
