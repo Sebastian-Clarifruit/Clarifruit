@@ -14,7 +14,7 @@ def hello_world():
 def barcode_info():
     barcode = request.args.get('barcode')
     
-    if barcode == "(01)10664924899116(13)221108(10)PFLB-45":
+    if barcode == "(01)10664924899116(13)22108(10)PFLB-45":
         letters = string.digits
         name = "4x6 ct Mix Bell Pep Bags"
         return {
