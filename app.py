@@ -19,7 +19,6 @@ def barcode_info():
         name = "4x6 ct Mix Bell Pep Bags"
         return {
             "inspectionName": name,
-            "packageKey": "3576",
             "upc": "684924040054",
         }
 
