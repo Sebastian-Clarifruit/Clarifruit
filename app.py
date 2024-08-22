@@ -20,7 +20,7 @@ def get_info():
     # Search for the pallet number in the data
     for row in data:
         if row['Pallet#'] == pallet_number:
-            return jsonify({"Header": row}), 200
+            return jsonify(row), 200  # Directly return the row dictionary
     
     # If the pallet number is not found
     return jsonify({"error": "Pallet# not found"}), 404
