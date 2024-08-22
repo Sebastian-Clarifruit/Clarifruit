@@ -1,86 +1,29 @@
-from flask import Flask, request, json, jsonify
-import time
-import random
-import string
+from flask import Flask, request, jsonify
+import csv
 
 app = Flask(__name__)
 
-@app.route('/')
-def hello_world():
-    return 'Hello, World!'
+# Load CSV data into memory for quick access
+data = []
+with open('your_file.csv', newline='', encoding='utf-8') as csvfile:
+    reader = csv.DictReader(csvfile)
+    for row in reader:
+        data.append(row)
 
-
-@app.route('/test')
-def barcode_info():
-    barcode = request.args.get('barcode')
+@app.route('/get_info', methods=['GET'])
+def get_info():
+    pallet_number = request.args.get('Pallet#')
     
-    if barcode == "(01)10664924899116(13)22108(10)PFLB-45":
-        letters = string.digits
-        name = "4x6 ct Mix Bell Pep Bags"
-        return {
-            "inspectionName": name,
-            "upc": "684924040054",
-        }
+    if not pallet_number:
+        return jsonify({"error": "Pallet# is required"}), 400
+    
+    # Search for the pallet number in the data
+    for row in data:
+        if row['Pallet#'] == pallet_number:
+            return jsonify({"Header": row}), 200
+    
+    # If the pallet number is not found
+    return jsonify({"error": "Pallet# not found"}), 404
 
-    if barcode == "abcd1234":
-        letters = string.digits
-        name = "Sales Demo" + (''.join(random.choice(letters) for i in range(6)))
-        return {
-            "inspectionName": name,
-            "coo": "USA",
-            "grower": "Demo Grower",
-            "customer": "Demo Client",
-            "arrivaldate": "1718807418296",
-            "ggnumber": 12345,
-            "in": "BJ's",
-            "pd": "1718807418296", 
-            "supp": "Affinor",
-            "br": "Bj's",
-        }
-
-    if barcode == "Bjs Grapes":
-        letters = string.digits
-        name = "Bjs Grapes" + (''.join(random.choice(letters) for i in range(6)))
-        return {
-            "inspectionName": name,
-            "COO": "USA",
-            "PD": "1709607600000",
-            "IN": "BJ's",
-            "codeVariety": "CO",
-        }
-    if barcode == "Bjs Oranges":
-        letters = string.digits
-        name = "Bjs Oranges" + (''.join(random.choice(letters) for i in range(6)))
-        return {
-            "inspectionName": name,
-            "COO": "USA",
-            "PD": "1709607600000",
-            "IN": "BJ's",
-            "codeVariety": "CO",
-        }
-    if barcode == "abcd1234":
-        letters = string.digits
-        name = "FDM" + (''.join(random.choice(letters) for i in range(6)))
-        return {
-            "inspectionName": name,
-            "coo": "Costa Rica",
-            "arrivaldate": "1709607600000",
-            "grower": "FDM",
-        }
-    else:
-        return jsonify({"error": "No Stock - Barcode not exist",
-                        "message": "There is no stock on pallet reference"}), 422
-
-
-@app.route('/foo', methods=['POST'])
-def print_payload():
-    payload = request.get_json()
-    print(payload)
-    return 'Payload received and printed'
-    if __name__ == '__main__':
-        app.run()
-
-
-@app.route('/barcode_issue')
-def index():
-    return jsonify("Error: Barcode is not exists"), 422
+if __name__ == '__main__':
+    app.run(debug=True)
