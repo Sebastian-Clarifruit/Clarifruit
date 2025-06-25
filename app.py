@@ -23,7 +23,12 @@ def barcode_info():
             "coo": "USA",
             "grower": "Field 1",
             "lot": "2404",
-            "packdate": "1709607600000",       
+            "packdate": "1709607600000",   
+            "pktype": "11lb bulk"
+            "qcases": "100"
+            "pkdate": "1750473600000",
+            "samples" "5"
+            "pkcode": "1875"
         }
     else:
         return jsonify({"error": "No Stock - Barcode not exist",
