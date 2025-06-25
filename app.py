@@ -27,7 +27,7 @@ def barcode_info():
             "pktype": "11lb bulk",
             "qcases": "100",
             "pkdate": "1750473600000",
-            "samples" "5",
+            "samples": "5",
             "pkcode": "1875",
         }
     else:
