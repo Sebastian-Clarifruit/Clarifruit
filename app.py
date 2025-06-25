@@ -17,7 +17,7 @@ def barcode_info():
 
     if barcode == "abcd1234":
         letters = string.digits
-        name = "Strawberry Fields"
+        name = "Lebo Farms Inspection"
         return {
             "inspectionName": name,
             "coo": "USA",
